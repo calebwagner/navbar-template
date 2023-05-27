@@ -31,9 +31,6 @@ a:hover{
 .logo a {
     font-size: 20px;
 }
-/* .item.secondary {
-    border-bottom: 1px #444 solid;
-} */
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -113,9 +110,6 @@ a:hover{
     }
     .menu li.button {
         padding-right: 0;
-    }
-    .button.secondary {
-        border: 0;
     }
     .menu {
         justify-content: center;
