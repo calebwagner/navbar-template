@@ -10,6 +10,8 @@ nav {
     background: #222;
     padding: 5px 20px;
     min-width: 350px;
+    /* position: fixed; */
+    width: 100%;
 }
 .menu li {
     font-size: 16px;
@@ -36,9 +38,10 @@ a:hover{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .toggle {
-    order: 1;
+    /* order: 1; */
 }
 .item.button {
     order: 2;
@@ -152,3 +155,8 @@ a:hover{
         border-top: none;
     }
 }
+
+/* main {
+    position: relative;
+    top: 100px;
+} */
