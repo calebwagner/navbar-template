@@ -1,3 +1,6 @@
+/* 1) align links in nav of desktop display
+ * 2)
+ */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -5,13 +8,17 @@
 }
 body {
   font-family: sans-serif;
+  background-color: #111;
 }
 nav {
-  background: #222;
+  background: white;
   padding: 5px 20px;
   min-width: 350px;
   /* position: absolute; */
   width: 100%;
+}
+h1, p {
+  color: #f1f1f1;
 }
 .menu li {
   font-size: 16px;
@@ -21,7 +28,7 @@ ul {
   list-style: none;
 }
 a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 a:hover{
@@ -87,7 +94,8 @@ a:hover{
 }
 
 /* Desktop Menu */
-@media all and (min-width: 768px) {
+/* was min-width: 768px */
+@media all and (min-width: 870px) {
   .item {
       display: block;
       width: auto;
@@ -108,11 +116,12 @@ a:hover{
       padding-right: 0;
   }
   .menu {
-      justify-content: center;
+      /* justify-content: center; */
+      display: flex;
   }
-  .logo {
-      flex: 1;
-  }
+  /* .logo {
+      flex: 0;
+  } */
   .item.button {
       width: auto;
       order: 1;
@@ -150,6 +159,19 @@ a:hover{
   #hamburger {
     display: none;
   }
+  .left {
+    display: inline-flex;
+  }
+  .right {
+    display: flex;
+  }
+  .mho-logo {
+    width: 100%;
+    height: auto;
+  }
+  .link {
+    margin-top: 15px;
+  }
 }
 .sidenav {
     height: 100%;
@@ -185,10 +207,19 @@ a:hover{
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+  @media screen and (min-height: 410px) {
+    #mho-logo {
+      width: 200px;
+      height: auto;
+      margin-top: 15px;
+    }
+  }
+
   #hamburger {
     font-size:30px;
     cursor:pointer;
-    color: white;
+    color: black;
   }
 
 /* special btn */
@@ -214,4 +245,10 @@ a:hover{
   }
   .button.secondary a:hover {
       color: #ddd;
+  }
+
+
+  .mho-logo {
+    width: 100%;
+    height: auto;
   }
